@@ -2,17 +2,29 @@
   <div>
     <Main />
     <Header />
+    <Home />
+    <About />
+    <OurProjects />
+    <ContactUs />
   </div>
 </template>
 
 <script>
 import Main from "./components/Main.vue";
 import Header from "./components/Header.vue";
+import Home from "./components/Home.vue";
+import About from "./components/About.vue";
+import OurProjects from "./components/OurProjects.vue";
+import ContactUs from "./components/ContactUs.vue";
 export default {
   name: "App",
   components: {
     Main,
     Header,
+    Home,
+    About,
+    OurProjects,
+    ContactUs,
   },
 };
 </script>

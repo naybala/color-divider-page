@@ -24,9 +24,6 @@
             <a href="#about" class="nav__link text-decoration-none">{{ about }}</a>
           </li>
           <li class="nav__item">
-            <a href="#skills" class="nav__link text-decoration-none">{{ skill }}</a>
-          </li>
-          <li class="nav__item">
             <a href="#project" class="nav__link text-decoration-none">{{ project }}</a>
           </li>
           <li class="nav__item">
@@ -51,8 +48,7 @@ export default {
       phone: "+95 9 763684400",
       home: "Home",
       about: "About",
-      skill: "Skills",
-      project: "Projects",
+      project: "Our Projects",
       contact: "Contact Us",
     };
   },
