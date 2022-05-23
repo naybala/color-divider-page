@@ -6,6 +6,7 @@
     <About />
     <OurProjects />
     <ContactUs />
+    <Footer />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Home from "./components/Home.vue";
 import About from "./components/About.vue";
 import OurProjects from "./components/OurProjects.vue";
 import ContactUs from "./components/ContactUs.vue";
+import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: {
@@ -25,6 +27,7 @@ export default {
     About,
     OurProjects,
     ContactUs,
+    Footer,
   },
 };
 </script>
