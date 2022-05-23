@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="main-container">
     <div class="forms-container">
       <div class="signin-signup">
         <Login />
@@ -13,8 +13,7 @@
           <h3>Hello</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quibusdam
-            harum dolore delectus maxime mollitia odio nisi at velit consectetur quia
-            pariatur temporibus nemo sequi ipsa, veritatis et architecto saepe?
+            harum dolore delectus maxime mollitia
           </p>
           <button class="btn transparent" @click="changingUi">Discover More</button>
         </div>
@@ -27,8 +26,6 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veniam omnis
             aliquam suscipit, numquam accusamus soluta debitis est dolor dolorem
-            distinctio quam earum tenetur voluptatum voluptatem reiciendis tempore,
-            sapiente quae.
           </p>
           <button class="btn transparent" @click="UndoUi">Previous</button>
         </div>
@@ -47,11 +44,11 @@ export default {
   },
   methods: {
     changingUi() {
-      const container = document.querySelector(".container");
+      const container = document.querySelector(".main-container");
       container.classList.add("sign-up-mode");
     },
     UndoUi() {
-      const container = document.querySelector(".container");
+      const container = document.querySelector(".main-container");
       container.classList.remove("sign-up-mode");
     },
   },
@@ -67,7 +64,7 @@ div.sign-up {
   opacity: 0;
   z-index: 1;
 }
-.container {
+.main-container {
   position: relative;
   width: 100%;
   background-color: #fff;
@@ -123,7 +120,7 @@ div.sign-up {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.container:before {
+.main-container:before {
   content: "";
   position: absolute;
   height: 2500px;
@@ -183,10 +180,14 @@ div.sign-up {
   margin: 0;
   background: none;
   border: 2px solid #fff;
-  width: 130px;
+  /* width: 130px; */
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
+}
+.btn.transparent:hover {
+  transform: translateY(-3px);
+  box-shadow: 3px 3px 10px black;
 }
 
 .right-panel .image,
@@ -196,45 +197,45 @@ div.sign-up {
 
 /* ANIMATION */
 
-.container.sign-up-mode:before {
+.main-container.sign-up-mode:before {
   transform: translate(100%, -50%);
   right: 52%;
 }
 
-.container.sign-up-mode .left-panel .image,
-.container.sign-up-mode .left-panel .content {
+.main-container.sign-up-mode .left-panel .image,
+.main-container.sign-up-mode .left-panel .content {
   transform: translateX(-800px);
 }
 
-.container.sign-up-mode .signin-signup {
+.main-container.sign-up-mode .signin-signup {
   left: 25%;
 }
 
-.container.sign-up-mode div.sign-up {
+.main-container.sign-up-mode div.sign-up {
   opacity: 1;
   z-index: 2;
 }
 
-.container.sign-up-mode div.sign-in {
+.main-container.sign-up-mode div.sign-in {
   opacity: 0;
   z-index: 1;
 }
 
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
+.main-container.sign-up-mode .right-panel .image,
+.main-container.sign-up-mode .right-panel .content {
   transform: translateX(0%);
 }
 
-.container.sign-up-mode .left-panel {
+.main-container.sign-up-mode .left-panel {
   pointer-events: none;
 }
 
-.container.sign-up-mode .right-panel {
+.main-container.sign-up-mode .right-panel {
   pointer-events: all;
 }
 
 @media (max-width: 870px) {
-  .container {
+  .main-container {
     min-height: 800px;
     height: 100vh;
   }
@@ -246,7 +247,7 @@ div.sign-up {
   }
 
   .signin-signup,
-  .container.sign-up-mode .signin-signup {
+  .main-container.sign-up-mode .signin-signup {
     left: 50%;
   }
 
@@ -298,7 +299,7 @@ div.sign-up {
     font-size: 0.7rem;
   }
 
-  .container:before {
+  .main-container:before {
     width: 1500px;
     height: 1500px;
     transform: translateX(-50%);
@@ -309,19 +310,19 @@ div.sign-up {
     transition: 2s ease-in-out;
   }
 
-  .container.sign-up-mode:before {
+  .main-container.sign-up-mode:before {
     transform: translate(-50%, 100%);
     bottom: 32%;
     right: initial;
   }
 
-  .container.sign-up-mode .left-panel .image,
-  .container.sign-up-mode .left-panel .content {
+  .main-container.sign-up-mode .left-panel .image,
+  .main-container.sign-up-mode .left-panel .content {
     transform: translateY(-300px);
   }
 
-  .container.sign-up-mode .right-panel .image,
-  .container.sign-up-mode .right-panel .content {
+  .main-container.sign-up-mode .right-panel .image,
+  .main-container.sign-up-mode .right-panel .content {
     transform: translateY(0px);
   }
 
@@ -330,7 +331,7 @@ div.sign-up {
     transform: translateY(300px);
   }
 
-  .container.sign-up-mode .signin-signup {
+  .main-container.sign-up-mode .signin-signup {
     top: 5%;
     transform: translate(-50%, 0);
   }
@@ -347,16 +348,16 @@ div.sign-up {
   .panel .content {
     padding: 0.5rem 1rem;
   }
-  .container {
+  .main-container {
     padding: 1.5rem;
   }
 
-  .container:before {
+  .main-container:before {
     bottom: 72%;
     left: 50%;
   }
 
-  .container.sign-up-mode:before {
+  .main-container.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
   }

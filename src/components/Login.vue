@@ -25,17 +25,12 @@ div {
   margin-bottom: 10px;
 }
 
-@media (max-width: 870px) {
-  .btn.transparent {
-    width: 110px;
-    height: 35px;
-    font-size: 0.7rem;
-  }
-}
-
 @media (max-width: 570px) {
   div {
     padding: 0 1.5rem;
+  }
+  .title {
+    margin-bottom: 10rem;
   }
 }
 </style>

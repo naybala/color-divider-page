@@ -1,17 +1,16 @@
 <template>
   <div>
-    <Main/>
+    <Main />
   </div>
 </template>
 
 <script>
-import Main from './components/Main.vue'
+import Main from "./components/Main.vue";
 export default {
-  name:"App",
-  components :{
+  name: "App",
+  components: {
     Main,
-
-  }
+  },
 };
 </script>
 
@@ -24,9 +23,7 @@ export default {
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Poppins", sans-serif;
 }
-
-
 </style>
