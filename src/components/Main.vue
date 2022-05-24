@@ -15,7 +15,7 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quibusdam
             harum dolore delectus maxime mollitia
           </p>
-          <button class="btn transparent" @click="changingUi">Discover More</button>
+          <button class="btn transparent" @click="changingUi">Discover More >></button>
         </div>
         <img src="../../src/assets/log.svg" class="image" alt="" />
       </div>
@@ -27,7 +27,9 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veniam omnis
             aliquam suscipit, numquam accusamus soluta debitis est dolor dolorem
           </p>
-          <button class="btn transparent" @click="UndoUi">Previous</button>
+          <button class="btn transparent" @click="UndoUi">
+            <i class="fa-solid fa-angles-left"></i> Previous
+          </button>
         </div>
       </div>
     </div>
