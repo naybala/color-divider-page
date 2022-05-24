@@ -30,6 +30,7 @@ div {
   padding: 0rem 5rem;
   transition: all 0.2s 0.7s;
   overflow: hidden;
+  margin-top: 8rem;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }

@@ -24,6 +24,7 @@ div {
   justify-content: center;
   flex-direction: column;
   padding: 0rem 5rem;
+  margin-bottom: 5rem;
   transition: all 0.2s 0.7s;
   overflow: hidden;
   grid-column: 1 / 2;

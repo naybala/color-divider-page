@@ -267,10 +267,11 @@ div.sign-up {
   }
 
   .right-panel {
-    grid-row: 3 / 4;
+    grid-row: 3/ 4;
   }
 
   .left-panel {
+    margin-top: 5rem;
     grid-row: 1 / 2;
   }
 
@@ -296,7 +297,7 @@ div.sign-up {
   }
 
   .btn.transparent {
-    width: 110px;
+    width: 150px;
     height: 35px;
     font-size: 0.7rem;
   }
